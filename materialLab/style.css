@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+@keyframes colorChange {
+    0% {background-color: aquamarine;}
+    25% {height: 4px;}
+    50% {background-color: plum; width: 50%; height: 4px;}
+    75% {height: 4px;}
+    100% {background-color: aquamarine;}
+}
+
+#bar {
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 4px;
+    background-color: aqua;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {transfrom: rotate(0deg);}
+    50% {border-top: 4px solid plum;}
+    100% {transform: rotate(360deg);}
+}
+
+#loading-indicator {
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    border-top: 4px solid aquamarine;
+    border-radius: 50%;
+    animation: spin 2s infinite;
+}
+
+@keyframes random {
+    from {top: 0px; left: 0px;}
+    to {top: 90vh; left: 50%;}
+}
+
+#random {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    animation: random 2s infinite;
+}
